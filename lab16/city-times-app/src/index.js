@@ -2,8 +2,9 @@ import './styles/main.scss';
 import { formatInTimeZone } from 'date-fns-tz';
 import { cities } from './cities.js';
 
-
 const app = document.getElementById('app');
+app.innerHTML = ''; // Очищаємо контейнер від дублів
+
 const title = document.createElement('h1');
 title.textContent = 'City Times';
 app.appendChild(title);
