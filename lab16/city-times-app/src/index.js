@@ -3,7 +3,7 @@ import { formatInTimeZone } from 'date-fns-tz';
 import { cities } from './cities.js';
 
 const app = document.getElementById('app');
-app.innerHTML = ''; // Очищаємо контейнер від дублів
+app.innerHTML = ''; // Цей рядок вбиває всі дублікати!
 
 const title = document.createElement('h1');
 title.textContent = 'City Times';
